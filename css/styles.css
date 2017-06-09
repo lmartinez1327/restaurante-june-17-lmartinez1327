@@ -62,6 +62,7 @@ p {
 /*Our Story Section*/
 #story {
   padding-top: 5%;
+  margin-bottom: 9%;
 }
 
 #story h1.orange-text {
@@ -69,6 +70,7 @@ p {
   font-size: 64px;
   margin-bottom: 0px;
   margin-top: 12%;
+
 }
 #story h1.orange-text~p {
   font-size: 1.4em;
@@ -87,3 +89,23 @@ p {
   line-height: 18px;
 }
 
+#review {
+  background-image: url('../img/food_review.jpg');
+  background-attachment: fixed;
+  height: 425px;
+  background-size: cover;
+  background-position: center;
+  padding-top: 6%;
+}
+.review-background {
+ background-color: rgba(0, 0, 0, 0.5);
+ border-radius: 4px;
+}
+#review h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 54px;
+}
+#review p {
+  color: #fff;
+  font-size: 20px;
+}
