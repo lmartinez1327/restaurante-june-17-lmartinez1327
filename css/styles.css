@@ -14,6 +14,9 @@ p {
 .text-shadow {
   text-shadow: 2px 2px #333;
 }
+body {
+  position: relative;
+}
 /*Header Styles*/
 .navbar {
   background-color: transparent;
@@ -129,4 +132,14 @@ p {
   font-family: 'Lobster', cursive;
   color: #fff;
   font-size: 5em;
+}
+/* Contact Section Starts*/
+
+#contact {
+  background-color: #f8512f;
+  height: 525px;
+}
+iframe {
+  height: 80%;
+  width: 90%;
 }

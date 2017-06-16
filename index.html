@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll">
 	<!-- Main content goes here -->
 	<header class="container-fluid">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -26,11 +26,11 @@
 		   		<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right text-shadow">
-					<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Our Story</a></li>
-						<li><a href="#">Review</a></li>
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">Contact</a></li>
+					<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#story">Our Story</a></li>
+						<li><a href="#review">Review</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -46,7 +46,7 @@
 		</ol>
 
 	  <!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
+		<div class="carousel-inner" role="listbox" id="home">
 			<div class="item active" id="wood-background">  <!-- First slide-->
 				<img src="img/logo-01.png" alt="logo" class="img-responsive center-block" id="restaurante-img">
 			</div>
@@ -112,66 +112,65 @@
 	<div class="container-fluid" id="menu">
 		<div class="container">
 			<h1 class="text-shadow menu-title text-center">Menu</h1>
-			<!--Menun Component starts  -->
+			<!--Menu Component starts  -->
 			<div>
-
-  <!-- Nav tabs -->
-			  <ul class="nav nav-tabs nav-justified text-uppercase" role="tablist">
-			    <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
-			    <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab" class="orange-text">Lunch</a></li>
-			    <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab" class="orange-text">Dinner</a></li>
-			    <li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab" class="orange-text">Dessert</a></li>
-			  </ul>
+  		<!-- Nav tabs -->
+			 <ul class="nav nav-tabs nav-justified text-uppercase" role="tablist">
+			  <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">Appetizers</a></li>
+			  <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab" class="orange-text">Lunch</a></li>
+			  <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab" class="orange-text">Dinner</a></li>
+			  <li role="presentation"><a href="#dessert" aria-controls="dessert" role="tab" data-toggle="tab" class="orange-text">Dessert</a></li>
+			 </ul>
 
 			  <!-- Tab panes -->
-			  <div class="tab-content">
-			    <div role="tabpanel" class="tab-pane fade in active" id="appetizers">
-						<!-- appetizer menu begins-->
-							<div class="col-sm-3 food"> <!-- first menu item begins-->
-								<img src="img/dip.jpg" alt="dip" class="img-resposive img-thumbnail">
-								<h3 class="text-center"> Apetizer 1</h3>
-								<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-							</div><!--apetizer menu ends  -->
-							<div class="col-sm-3 food"> <!-- second menu item begins-->
-								<img src="img/eggplant.jpg" alt="eggplant" class="img-resposive img-thumbnail">
-								<h3 class="text-center"> Apetizer 2</h3>
-								<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-							</div><!--second menu item ends  -->
-							<div class="col-sm-3 food"> <!-- third menu item begins-->
-								<img src="img/meat.jpg" alt="meat" class="img-resposive img-thumbnail">
-								<h3 class="text-center"> Appetizer 3</h3>
-								<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-							</div><!--third menu item ends  -->
-							<div class="col-sm-3 food"> <!-- 4th menu item begins-->
-								<img src="img/bruschetta.jpg" alt="bruschetta" class="img-resposive img-thumbnail">
-								<h3 class="text-center"> Apetizer 4</h3>
-								<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-							</div><!--fourt menu ends  -->
-							<!--apetizer menu ends  -->
-			    </div>
-			    <div role="tabpanel" class="tab-pane fade" id="lunch">
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="appetizers">
+				<!-- appetizer menu begins-->
 						<div class="col-sm-3 food"> <!-- first menu item begins-->
 							<img src="img/dip.jpg" alt="dip" class="img-resposive img-thumbnail">
-							<h3 class="text-center"> Lunch 1</h3>
-							<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+							<h3 class="text-center"> Apetizer 1</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
 						</div><!--apetizer menu ends  -->
 						<div class="col-sm-3 food"> <!-- second menu item begins-->
 							<img src="img/eggplant.jpg" alt="eggplant" class="img-resposive img-thumbnail">
+							<h3 class="text-center"> Apetizer 2</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+						</div><!--second menu item ends  -->
+						<div class="col-sm-3 food"> <!-- third menu item begins-->
+							<img src="img/meat.jpg" alt="meat" class="img-resposive img-thumbnail">
+							<h3 class="text-center"> Appetizer 3</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+						</div><!--third menu item ends  -->
+						<div class="col-sm-3 food"> <!-- 4th menu item begins-->
+							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-resposive img-thumbnail">
+							<h3 class="text-center"> Apetizer 4</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+						</div><!--fourt menu ends  -->
+							<!--apetizer menu ends  -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="lunch">
+						<div class="col-sm-3 food"> <!-- first menu item begins-->
+							<img src="img/dip.jpg" alt="dip" class="img-resposive img-thumbnail">
+							<h3 class="text-center"> Lunch 1</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+						</div><!--first menu item ends  -->
+						<div class="col-sm-3 food"> <!-- second menu item begins-->
+							<img src="img/eggplant.jpg" alt="eggplant" class="img-resposive img-thumbnail">
 							<h3 class="text-center"> Lunch 2</h3>
-							<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
 						</div><!--second menu item ends  -->
 						<div class="col-sm-3 food"> <!-- third menu item begins-->
 							<img src="img/meat.jpg" alt="meat" class="img-resposive img-thumbnail">
 							<h3 class="text-center"> Lunch 3</h3>
-							<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
 						</div><!--third menu item ends  -->
 						<div class="col-sm-3 food"> <!-- 4th menu item begins-->
 							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-resposive img-thumbnail">
-							<h3 class="text-center"> Lunchr 4</h3>
-							<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-						</div><!--fourt menu ends  -->
+							<h3 class="text-center"> Lunch 4</h3>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
+						</div><!--fourth menu ends  -->
 					</div>
-			    <div role="tabpanel" class="tab-pane fade" id="dinner">
+					<div role="tabpanel" class="tab-pane fade" id="dinner">
 						<div class="col-sm-3 food"> <!-- first menu item begins-->
 							<img src="img/dip.jpg" alt="dip" class="img-resposive img-thumbnail">
 							<h3 class="text-center"> Dinner 1</h3>
@@ -191,8 +190,9 @@
 							<img src="img/bruschetta.jpg" alt="bruschetta" class="img-resposive img-thumbnail">
 							<h3 class="text-center"> Dinner 4</h3>
 							<p class="text-justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores dolor molestias ipsa, libero ducimus, debitis quidem totam ut est iste nobis animi impedit laboriosam quasi exercitationem sint distinctio iure.</p>
-						</div><!--fourt menu ends  --></div>
-			    <div role="tabpanel" class="tab-pane fade" id="dessert">
+						</div><!--fourt menu ends  -->
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="dessert">
 						<div class="col-sm-3 food"> <!-- first menu item begins-->
 							<img src="img/dip.jpg" alt="dip" class="img-resposive img-thumbnail">
 							<h3 class="text-center"> Dessert 1</h3>
@@ -215,12 +215,57 @@
 						</div><!--fourt menu ends-->
 					</div>
   			</div>
-
 			</div>
 			<!-- Menu Component Ends -->
 		</div>
 	</div>
 <!-- Menus Sections Ends -->
+	<!-- Contact Section Begins -->
+	<div class="container-fluid" id="contact">
+		<div class="row">
+			<div class="col-sm-12 text-justify" id="contact-text">
+				<h1>Contact us</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<form action="">
+					<div class="form-group">
+				    <label for="Name">Name</label>
+				    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="Email">Email</label>
+				    <input type="text" class="form-control" id="email" placeholder="Your Email" required>
+				  </div>
+				  <div class="form-group">
+				    <label for="Subject">subject</label>
+				    <input type="text" class="form-control" id="subject" placeholder="Your Subject">
+				  </div>
+					<label for="message">Message</label>
+					<textarea class="form-control" rows="3" placeholder="message" required></textarea>
+					<label>
+						<input type="checkbox" value="">
+							I'm Not A Robot
+					</label>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<h3 class="text-uppercase">Restaurante</h3>
+				<address class="">
+					700 Van Ness Ave<br>
+					 Fresno, CA 93721<br>
+					 P.(555)555-5555
+				</address>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.596361845798!2d-119.78796568471213!3d36.732254147385035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1497580294369" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Contact Section Ends -->
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
