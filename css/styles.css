@@ -126,7 +126,7 @@ body {
 }
 .food {
   background-color: #fff;
-  padding: 15px;
+  padding: 10px;
 }
 .menu-title {
   font-family: 'Lobster', cursive;
@@ -137,9 +137,19 @@ body {
 
 #contact {
   background-color: #f8512f;
-  height: 525px;
+  height: 625px;
+  padding: 5%;
+}
+#form-padding {
+  padding-right: 120px;
 }
 iframe {
   height: 80%;
   width: 90%;
+}
+.contact-text {
+  color: #fff;
+}
+.contact-text h1 {
+  font-size: 5em;
 }
